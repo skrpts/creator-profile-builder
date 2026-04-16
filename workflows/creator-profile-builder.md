@@ -15,6 +15,8 @@ connections:
     type: uses
   - target: profile-validation
     type: uses
+  - target: profile-review
+    type: uses
   - target: language-polish
     type: uses
   - target: consistency-check
@@ -39,7 +41,8 @@ loops:
     steps:
       - "profile-assembly"
       - "profile-validation"
-    verifier: "profile-validation"
+      - "profile-review"
+    verifier: "profile-review"
     maxIterations: 4
     freshContextPerIteration: true
 output_step: "language-polish"
@@ -49,6 +52,7 @@ composite_steps:
   - "banned-language-calibration"
   - "profile-assembly"
   - "profile-validation"
+  - "profile-review"
   - "language-polish"
   - "consistency-check"
 execution:
@@ -61,6 +65,8 @@ execution:
   - skill: "profile-assembly"
     step_type: "generation"
   - skill: "profile-validation"
+    step_type: "validation"
+  - skill: "profile-review"
     step_type: "validation"
   - skill: "language-polish"
     step_type: "content"
@@ -121,17 +127,28 @@ Invoke the **profile-assembly** skill via the **assemble-creator-profiles** prom
 
 **Output:** Complete Voice Profile and Audience Profile.
 
-### Stage 5: Profile Validation (Loop Verifier)
+### Stage 5: Profile Validation (Loop — Automated Check)
 
 **Input:** Assembled profiles, original content samples
 
-Invoke the **profile-validation** skill via the **validate-profile-depth** prompt. Evaluates profiles against seven checks: depth, specificity (10+ quotes), completeness, evidence grounding, banned list quality, voice profile length (3,000-5,000 words), and actionability.
+Invoke the **profile-validation** skill via the **validate-profile-depth** prompt. Evaluates profiles against seven checks: depth, specificity (10+ quotes), completeness, evidence grounding, banned list quality, voice profile length (3,000-5,000 words), and actionability. Returns a structured verdict with notes on each check.
 
-**Gate:** All seven checks must pass. If any fail, the validator returns specific revision instructions and the loop returns to Stage 4.
+**Output:** Structured verdict with per-check results and quality notes.
 
-**Output:** Structured verdict (pass/continue/fail) with per-check results and revision instructions.
+### Stage 6: Profile Review (Loop Verifier — Human Gate)
 
-### Stage 6: Language Polish
+**Input:** Assembled profiles with validation notes
+
+Execution **pauses** and presents the profiles to the creator for review. The creator reads the Voice Profile and Audience Profile, checks accuracy against their own understanding of their voice, and either approves or provides specific feedback.
+
+- **If approved:** The loop exits and the profiles proceed to language-polish.
+- **If feedback is provided:** The loop returns to Stage 4, where profile-assembly incorporates the creator's corrections into the next revision.
+
+This is the verifier in the until_pass loop — the creator decides when the profiles are good enough, not the automated validator.
+
+**Output:** Creator's approval or revision feedback.
+
+### Stage 7: Language Polish
 
 **Input:** Validated profiles
 
@@ -139,7 +156,7 @@ Invoke the **language-polish** skill to correct spelling, grammar, punctuation, 
 
 **Output:** Polished Voice Profile and Audience Profile.
 
-### Stage 7: Consistency Check (Parallel)
+### Stage 8: Consistency Check (Parallel)
 
 **Input:** Polished profiles
 
@@ -151,7 +168,7 @@ Invoke the **consistency-check** skill to verify internal coherence — consiste
 
 - If content samples are too short (under 300 words total), the analyser flags low confidence across all sections. Provide more content for better results.
 - If the banned language calibration finds no words from the default list in the content, the personalised list may be unchanged — this is normal for creators who already avoid these patterns naturally.
-- If the validation loop reaches maxIterations (4) without passing, the best-effort profiles are returned with a note indicating which checks did not pass. The profiles are still usable — they just have identified weak spots.
+- If the refinement loop reaches maxIterations (4) without the creator approving, the latest version of the profiles proceeds to language-polish. The profiles are still usable — the creator can re-run if further refinement is needed.
 - If the self-description pathway produces very low confidence scores (1-2/5), the profiles include a recommendation to re-run with actual content samples.
 
 ## Outputs
