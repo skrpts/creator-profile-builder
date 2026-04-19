@@ -13,7 +13,8 @@ inputs:
     description: "3-5 pieces of the creator's writing (blog posts, newsletters, articles). If no samples available, a detailed description of writing style and audience."
     example: "See workflow Example Input section"
     required: true
-    type: text
+    type: file
+    accept: ".txt,.md,.docx"
   creator_name:
     label: "Creator Name"
     description: "Creator's name or pen name for profile headers"
