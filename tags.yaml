@@ -1,0 +1,19 @@
+- id: "voice-analysis"
+  title: "Voice Analysis"
+  description: "Voice Analysis workflows and tools"
+
+- id: "audience-profiling"
+  title: "Audience Profiling"
+  description: "Audience Profiling workflows and tools"
+
+- id: "content-creation"
+  title: "Content Creation"
+  description: "Content Creation workflows and tools"
+
+- id: "writing-style"
+  title: "Writing Style"
+  description: "Writing Style workflows and tools"
+
+- id: "personalisation"
+  title: "Personalisation"
+  description: "Personalisation workflows and tools"
