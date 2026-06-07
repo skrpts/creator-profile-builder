@@ -1,9 +1,9 @@
 # --- Identity ---
-id: "d4387ebe-3985-44a6-becb-2773859bca15"
+id: "9e698b5f-bc90-4ab4-a624-66c75b95a037"
 name: "creator-profile-builder"
 display_name: "Creator Profile Builder"
 description: "Analyse your content to build a reusable Voice Profile and Audience Profile — deep writing DNA, not surface labels"
-version: "1.1.14"
+version: "1.1.15"
 engine: ">=0.1.0"
 
 # --- Attribution ---
