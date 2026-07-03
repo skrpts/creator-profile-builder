@@ -59,24 +59,31 @@ execution:
   - skill: "voice-pattern-analysis"
     prompt: "analyse-voice-patterns"
     step_type: "synthesis"
+    output: { name: "voice_patterns", type: "text" }
   - skill: "audience-profile-synthesis"
     prompt: "extract-audience-signals"
     step_type: "synthesis"
+    output: { name: "audience_profile", type: "text" }
   - skill: "banned-language-calibration"
     prompt: "calibrate-banned-words"
     step_type: "synthesis"
+    output: { name: "banned_words", type: "list" }
   - skill: "profile-assembly"
     prompt: "assemble-creator-profiles"
     step_type: "generation"
+    output: { name: "creator_profiles", type: "text" }
   - skill: "profile-validation"
     prompt: "validate-profile-depth"
     step_type: "validation"
+    output: { name: "validation_result", type: "decision" }
   - skill: "profile-review"
     prompt: "review-profiles"
     step_type: "validation"
+    output: { name: "review_feedback", type: "text" }
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    output: { name: "polished_profiles", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
@@ -84,6 +91,7 @@ execution:
     - skill: "consistency-check"
       prompt: "check-consistency"
       step_type: "review"
+      output: { name: "consistency_verdict", type: "decision" }
       context:
         voice_profile: "Neutral professional tone"
         consistency_strictness: "Standard"
