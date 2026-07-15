@@ -96,7 +96,7 @@ Formality (1-10 with description), humour tolerance, directness, jargon toleranc
 Formats, length, depth, frequency expectations, visual expectations.
 
 **8. Engagement Patterns**
-Discovery channels, consumption mode, sharing behaviour, feedback patterns.
+Discovery channels, consumption mode, sharing behavior, feedback patterns.
 
 **9. Cross-Reference with Voice Profile**
 How audience context should influence voice application — specific guidance per segment.

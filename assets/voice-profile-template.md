@@ -22,7 +22,7 @@ _200-300 word overview of this creator's voice — the elevator pitch. What make
 - **Opener taxonomy:** _e.g. 40% bold statements, 30% rhetorical questions, 20% scene-setting, 10% direct address_
 - **Closer patterns:** _e.g. callback to opening, practical takeaway, open question_
 - **Fragment usage:** _frequency, purpose, typical length_
-- **Compound vs simple ratio:** _e.g. 60/40 favouring simple_
+- **Compound vs simple ratio:** _e.g. 60/40 favoring simple_
 
 **Evidence:**
 - _Direct quote demonstrating pattern 1_
@@ -45,7 +45,7 @@ _200-300 word overview of this creator's voice — the elevator pitch. What make
 - **Abstraction level:** _concrete-first? abstract-first? balanced?_
 - **Metaphor/analogy patterns:** _frequency, source domains (sport? cooking? engineering?)_
 - **Contractions:** _always, sometimes, never_
-- **Formality markers:** _e.g. never uses "utilise", always "use"_
+- **Formality markers:** _e.g. never uses "utilize", always "use"_
 
 **Evidence:**
 - _Direct quotes showing vocabulary choices_
@@ -116,7 +116,7 @@ Words/phrases used rarely — flag for review but do not auto-reject.
 
 ## Voice Markers
 
-The 5-10 most distinctive features, ranked by how strongly they identify this creator. Another writer or AI using this profile should prioritise these.
+The 5-10 most distinctive features, ranked by how strongly they identify this creator. Another writer or AI using this profile should prioritize these.
 
 1. _Most distinctive feature — with evidence_
 2. _Second most distinctive_

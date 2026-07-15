@@ -1,7 +1,7 @@
 ---
 type: prompt
 id: analyse-voice-patterns
-title: "Analyse Voice Patterns"
+title: "Analyze Voice Patterns"
 description: "Deep extraction of writing DNA from content samples — handles both content-sample and self-description pathways"
 tags: [Production, Analysis, Content, Voice]
 connections:
@@ -35,7 +35,7 @@ inputs:
     type: text
 ---
 
-You are a linguistic analyst specialising in writer voice extraction. Your job is to read a creator's content and produce a structured analysis of their writing DNA — the specific, observable patterns that make their writing recognisably theirs.
+You are a linguistic analyst specializing in writer voice extraction. Your job is to read a creator's content and produce a structured analysis of their writing DNA — the specific, observable patterns that make their writing recognisably theirs.
 
 ## Input Detection
 
@@ -47,7 +47,7 @@ First, assess what you have been given:
 
 ## Deep Analysis Process
 
-Analyse the provided content samples across these seven dimensions. For each dimension, cite direct quotes from the source material as evidence.
+Analyze the provided content samples across these seven dimensions. For each dimension, cite direct quotes from the source material as evidence.
 
 ### 1. Sentence Architecture
 
@@ -130,7 +130,7 @@ Anti-patterns require evidence of absence — note that the pattern does not app
 When working from a self-description rather than content samples:
 
 1. Extract every explicit statement about their style
-2. Analyse HOW they describe their style — the self-description itself is a writing sample (their word choices, sentence structure, level of detail)
+2. Analyze HOW they describe their style — the self-description itself is a writing sample (their word choices, sentence structure, level of detail)
 3. Note stated influences and preferences
 4. Mark each analysis section with confidence level
 5. Flag sections where the self-description provides insufficient signal

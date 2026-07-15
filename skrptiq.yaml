@@ -2,8 +2,8 @@
 id: "9e698b5f-bc90-4ab4-a624-66c75b95a037"
 name: "creator-profile-builder"
 display_name: "Creator Profile Builder"
-description: "Analyse your content to build a reusable Voice Profile and Audience Profile — deep writing DNA, not surface labels"
-version: "1.1.16"
+description: "Analyze your content to build a reusable Voice Profile and Audience Profile — deep writing DNA, not surface labels"
+version: "1.1.17"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -66,7 +66,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-07-03T15:54:04.217Z"
+  scanned_at: "2026-07-15T11:38:56.629Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"

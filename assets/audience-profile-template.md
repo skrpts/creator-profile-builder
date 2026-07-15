@@ -79,7 +79,7 @@ Where and how this audience interacts with the content.
 
 - **Discovery channels:** _search, social, newsletter, word-of-mouth, aggregators_
 - **Consumption mode:** _read in full, skim then deep-read, save for later_
-- **Sharing behaviour:** _what triggers a share — format, platform, context_
+- **Sharing behavior:** _what triggers a share — format, platform, context_
 - **Feedback patterns:** _comments, replies, DMs, quotes — what they respond to_
 
 ## Cross-Reference with Voice Profile

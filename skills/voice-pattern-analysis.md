@@ -29,7 +29,7 @@ The output is a structured voice analysis covering seven dimensions: sentence ar
 
 3. **Vocabulary fingerprint** — Identifies signature words and their approximate frequency, abstraction level, technical density, metaphor/analogy source domains, contraction usage, formality markers. Maps the specific words and phrases this creator reaches for.
 
-4. **Rhetorical devices** — Catalogues question types and frequency, list formatting preferences, parenthetical asides, direct reader address, imperatives, repetition patterns, humour type and frequency.
+4. **Rhetorical devices** — Catalogs question types and frequency, list formatting preferences, parenthetical asides, direct reader address, imperatives, repetition patterns, humour type and frequency.
 
 5. **Structural habits** — Documents how they open pieces, how they close, section architecture, subheading style, typical piece length, use of visual elements (code blocks, bold, block quotes).
 

@@ -2,7 +2,7 @@
 type: workflow
 id: creator-profile-builder
 title: Creator Profile Builder
-description: "Analyse your content to build a reusable Voice Profile and Audience Profile — deep writing DNA, not surface labels"
+description: "Analyze your content to build a reusable Voice Profile and Audience Profile — deep writing DNA, not surface labels"
 tags: [Production, Customer-Facing, Content, Analysis, Loop]
 connections:
   - target: voice-pattern-analysis
@@ -79,6 +79,7 @@ execution:
   - skill: "profile-review"
     prompt: "review-profiles"
     step_type: "validation"
+    gate: true
     output: { name: "review_feedback", type: "text" }
   - skill: "language-polish"
     prompt: "polish-language"

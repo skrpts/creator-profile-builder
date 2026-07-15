@@ -17,14 +17,14 @@ Words that signal generic AI-generated content. Most human writers rarely use th
 
 | Word | Why it's banned | Common replacement |
 |------|----------------|-------------------|
-| delve | AI favourite, rarely used in natural writing | explore, examine, look at |
+| delve | AI favorite, rarely used in natural writing | explore, examine, look at |
 | dive (into) | Overused metaphor, especially "deep dive" | examine, investigate, cover |
 | unlock | Implies magic, vague | enable, allow, make possible |
 | unleash | Hyperbolic | release, enable, use |
 | harness | Overused in tech/business writing | use, apply, take advantage of |
 | leverage | As a verb — corporate jargon | use, build on, take advantage of |
 | streamline | Vague improvement claim | simplify, speed up, reduce steps |
-| optimise | Often used without specifying what improves | improve, speed up, reduce [specific metric] |
+| optimize | Often used without specifying what improves | improve, speed up, reduce [specific metric] |
 | empower | Vague, patronising | enable, give [specific capability] |
 | elevate | Vague uplift metaphor | improve, strengthen, raise [specific quality] |
 | robust | Meaningless without context | reliable, thorough, tested, resilient |
@@ -36,16 +36,16 @@ Words that signal generic AI-generated content. Most human writers rarely use th
 | synergy | Corporate jargon | combined effect, collaboration, overlap |
 | paradigm | Pretentious | approach, model, framework |
 | landscape | Metaphorical overuse — "the AI landscape" | field, space, market, industry |
-| tapestry | AI metaphor favourite | mix, combination, collection |
-| intricate | AI favourite for "complex" | complex, detailed, layered |
-| utilise | Formal for no reason | use |
-| facilitate | Corporate speak | help, enable, run, organise |
+| tapestry | AI metaphor favorite | mix, combination, collection |
+| intricate | AI favorite for "complex" | complex, detailed, layered |
+| utilize | Formal for no reason | use |
+| facilitate | Corporate speak | help, enable, run, organize |
 | endeavour | Unnecessarily formal | try, attempt, work, effort |
-| myriad | AI favourite | many, numerous, a range of |
+| myriad | AI favorite | many, numerous, a range of |
 | plethora | Same problem as myriad | many, plenty, a wide range of |
 | realm | "In the realm of" — AI padding | field, area, domain |
 | foster | Corporate/academic speak | encourage, build, support |
-| bolster | AI favourite | strengthen, support, reinforce |
+| bolster | AI favorite | strengthen, support, reinforce |
 | cornerstone | Overused metaphor | foundation, basis, key part |
 
 ## AI Cliché Phrases
@@ -72,7 +72,7 @@ Phrases that make content sound templated or machine-generated.
 | Take it to the next level | Vague aspiration | State the specific improvement |
 | Think outside the box | Ironic cliché | Describe the actual creative approach |
 | Move the needle | Corporate metric-speak | State what actually changes |
-| Low-hanging fruit | Overused prioritisation metaphor | "Quick wins", or name the specific items |
+| Low-hanging fruit | Overused prioritization metaphor | "Quick wins", or name the specific items |
 | Circle back | Corporate speak | "Revisit", "return to" |
 | Touch base | Same | "Check in", "follow up" |
 | Seamless integration | Nothing integrates seamlessly | "Works with", "connects to" |
@@ -91,7 +91,7 @@ Words that add emphasis without adding meaning.
 | very | Almost always deletable | Direct quotes, dialogue |
 | really | Same | Emphasis in casual voice ("this really matters") |
 | extremely | Usually hyperbolic | Measured technical claims ("extremely low latency = <1ms") |
-| incredibly | AI favourite intensifier | Rare — only when genuinely incredible |
+| incredibly | AI favorite intensifier | Rare — only when genuinely incredible |
 | absolutely | Filler emphasis | Contradicting a claim ("Absolutely not") |
 | literally | Figurative usage is wrong; literal usage is redundant | Never, unless distinguishing from figurative |
 | essentially | Usually filler | Simplifying a technical concept for a lay audience |
