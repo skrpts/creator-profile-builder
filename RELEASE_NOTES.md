@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.18
+GH#863 Wave 3 (Tier-3 tail) — the output_step (language-polish) was polishing its positional-previous step (a validation/review), not the deliverable, because polish-language was pinned pre-`source`-slot. Repinned polish-language 1.0.1→1.0.6 and bound language-polish `source` ← "Profile Assembly" (the real deliverable producer). No new steps; no other change.
+
 ## v1.1.17
 GH#844 — migrate the gate step from node-meta (`metadata.gate: true` in the skill) to the canonical execution-entry `gate: true` on the workflow step. Single source of truth; the engine + app read the execution entry. No behaviour change — `IsGate` is identical.
 
